@@ -1,0 +1,67 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/land/Desktop/WDI/Rails/weather/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/land/Desktop/WDI/Rails/weather/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/land/Desktop/WDI/Rails/weather/app/controllers/weather_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        3,
+        27,
+        27,
+        27,
+        27,
+        27,
+        null,
+        27,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1368748656
+  }
+}
