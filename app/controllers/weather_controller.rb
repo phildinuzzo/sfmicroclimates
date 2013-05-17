@@ -35,7 +35,7 @@ class WeatherController < ApplicationController
                         "minValue" => 40,
                         "maxValue" => 100,
                         "units" => {
-                          "suffix" => "°"
+                          "suffix" => "\U+00B0;"
                         }
                       },
                       "total" => false,
