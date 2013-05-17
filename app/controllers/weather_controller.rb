@@ -41,12 +41,12 @@ class WeatherController < ApplicationController
 
     @output_hash = {"graph" =>
                     {
-                      "title" => "Local Weather",
+                      "title" => "San Francisco",
                       "yAxis" => {
                         "minValue" => @m,
                         "maxValue" => @m2,
                         "units" => {
-                          "suffix" => "F"
+                          "suffix" => " F"
                         }
                       },
                       "total" => false,
