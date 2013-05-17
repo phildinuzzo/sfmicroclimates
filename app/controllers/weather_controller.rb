@@ -31,12 +31,12 @@ class WeatherController < ApplicationController
     @output_hash = {"graph" =>
                     {
                       "title" => "Local Weather",
-                      "yAxis" : {
-                        "minValue" : 40,
-                        "maxValue" : 100,
-                        "units" : {
-                          "suffix" : "°"
-                        },
+                      "yAxis" => {
+                        "minValue" => 40,
+                        "maxValue" => 100,
+                        "units" => {
+                          "suffix" => "°"
+                        }
                       },
                       "total" => false,
                       "datasequences" => [
