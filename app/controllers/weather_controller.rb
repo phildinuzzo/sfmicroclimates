@@ -8,12 +8,12 @@ class WeatherController < ApplicationController
       "Nob Hill" => "KCASANFR152",
       "FiDi" => "KCASANFR102",
       "Mission" => "KCASANFR79",
-      # "SOMA" => "KCASANFR14",
-      # "Hayes Valley" => "KCASANFR49",
-      # "Potrero Hill" => "ME1927",
-      # "Richmond" => "KCASANFR97",
-      # "Twin Peaks" => "KCASANFR34",
-      # "Ocean Beach" => "KCASANFR107"
+      "SOMA" => "KCASANFR14",
+      "Hayes Valley" => "KCASANFR49",
+      "Potrero Hill" => "ME1927",
+      "Richmond" => "KCASANFR97",
+      "Twin Peaks" => "KCASANFR34",
+      "Ocean Beach" => "KCASANFR107"
     }
 
     @export_array = []
