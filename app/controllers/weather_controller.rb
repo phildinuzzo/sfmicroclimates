@@ -8,12 +8,12 @@ class WeatherController < ApplicationController
       "Nob Hill" => "KCASANFR152",
       "FiDi" => "KCASANFR102",
       "Mission" => "KCASANFR79",
-      "SOMA" => "KCASANFR14",
-      "Hayes Valley" => "KCASANFR49",
-      "Potrero Hill" => "ME1927",
-      "Richmond" => "KCASANFR97",
-      "Twin Peaks" => "KCASANFR34",
-      "Ocean Beach" => "KCASANFR107"
+      # "SOMA" => "KCASANFR14",
+      # "Hayes Valley" => "KCASANFR49",
+      # "Potrero Hill" => "ME1927",
+      # "Richmond" => "KCASANFR97",
+      # "Twin Peaks" => "KCASANFR34",
+      # "Ocean Beach" => "KCASANFR107"
     }
 
     @export_array = []
@@ -26,16 +26,27 @@ class WeatherController < ApplicationController
         @temp_f = parsed_json['current_observation']['temp_f']
       end
         @export_array << {"title" => "#{stations.keys[i]}", "value" => @temp_f}
+
     end
+
+    @min = []
+    @max = []
+    @export_array.size.times do |i|
+      @min << @export_array[i]["value"]
+      @max << @export_array[i]["value"]
+    end
+
+    @m = @min.min - 5
+    @m2 = @max.max + 5
 
     @output_hash = {"graph" =>
                     {
                       "title" => "Local Weather",
                       "yAxis" => {
-                        "minValue" => 40,
-                        "maxValue" => 100,
+                        "minValue" => @m,
+                        "maxValue" => @m2,
                         "units" => {
-                          "suffix" => "\U+00B0;"
+                          "suffix" => "F"
                         }
                       },
                       "total" => false,
